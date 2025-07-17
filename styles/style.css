@@ -7,7 +7,7 @@
   --primary-purpule: hsl(246, 80%, 60%);
   --primary-orange: hsl(15, 100%, 70%);
   --primary-blue: hsl(195, 74%, 62%);
-  --primary-pink: hsl(348, 100%, 62%);
+  --primary-pink: hsl(348, 63%, 63%);
   --primary-green: hsl(145, 58%, 55%);
   --primary-purpule2: hsl(264, 64%, 52%);
   --primary-yellow: hsl(43, 84%, 65%);
@@ -16,15 +16,83 @@
   --neutral-purpule-500: hsl(235, 45%, 61%);
   --neutral-navy-200: hsl(236, 100%, 87%);
   --primary-font: "Rubik";
-  --text-footer: #000000;
-  --link-footer: #4036a9;
+  --text-footer: hsl(224, 9%, 90%);
+  --link-footer: hsl(228, 70%, 84%);
 }
 
 body{
     font-family: var(--primary-font), sans-serif;
     font-size: 18px;
+    color: var(--text-footer);
+    background-color: var(--neutral-navy-950);
+}
+.container{
+    display: grid;
+    gap: 24px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+.work,
+.play,
+.exercise,
+.study,
+.social,
+.self-care{
+height: 162px;
+  /* display: flex;
+  align-items: end; */
+  border-radius: 20px;
+ position: relative;
+ overflow: hidden;
+  
+}
+.icon{
+  position: relative;
+  bottom: 10px;
+  left: 210px;
+}
+.ew{
+  bottom: 0px;
+}
+.work{
+  background-color: var(--primary-orange);
+  
 }
 
+.play{
+  background-color: var(--primary-blue);
+  
+}
+.study{
+  background-color: var(--primary-pink);
+  
+}
+.exercise{
+  background-color: var(--primary-green);
+  
+}
+.social{
+  background-color: var(--primary-purpule);
+  
+}
+.self-care{
+  background-color: var(--primary-yellow);
+  
+
+}
+.dashboard{
+  width: 100%;
+  height: 124px;
+  background-color: var(--neutral-navy-900);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 18px;
+  position: absolute;
+  top: 40px;
+ 
+  
+}
 /* ================  FOOTER  ============== */
 
 footer {

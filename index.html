@@ -1,98 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<meta
-      name="description"
-      content="Time tracking dashboard."
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Time tracking dashboard." />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
     />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Time tracking dashboard | Frontend Mentor </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
- 
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Time tracking dashboard | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="container">
+        <div class="autor">
+          <div class="avatar">
+            <img
+              src="./images/image-jeremy.png"
+              alt="image-jeremy"
+              class="img"
+            />
+            <span>Report for </span>
+            <h1>Jeremy Robson</h1>
+          </div>
+          <div class="period">
+            <span> Daily</span>
+            <span>Weekly</span>
+            <span>Monthly</span>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/icon-work.svg" alt="" class="icon">
+          <div class="dashboard">
+            <div class="time-work">
+              <h2>Work</h2>
+            <span class="time">5hrs</span>
+            </div>
+            <div class="time-all">
+               <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="play">
+          <img src="./images/icon-play.svg" alt="" class="icon">
+          <div class="dashboard">
+            <div class="time-work">
+              <h2>Play</h2>
+            <span class="time">1hrs</span>
+            </div>
+            <div class="time-all">
+               <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="study">
+          <img src="./images/icon-study.svg" alt="" class="icon">
+          <div class="dashboard">
+           <div class="time-work">
+             <h2>Study</h2>
+            <span class="time">0hrs</span>
+           </div>
+           <div class="time-all">
+             <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+           </div>
+           
+          </div>
+        </div>
+        <div class="exercise">
+          <img src="./images/icon-exercise.svg" alt="" class="icon ew">
+          <div class="dashboard">
+            <div class="time-work">
+              <h2>Exercise</h2>
+            <span class="time">1hrs</span>
+            </div>
+            <div class="time-all">
+              <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="social">
+          <img src="./images/icon-social.svg" alt="" class="icon">
+          <div class="dashboard">
+            <div class="time-work">
+              <h2>Social</h2>
+            <span class="time">1hrs</span>
+            </div>
+            <div class="time-all">
+               <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+            </div>
+           
+          </div>
+        </div>
+        <div class="self-care">
+          <img src="./images/icon-self-care.svg" alt="" class="icon">
+          <div class="dashboard">
+           <div class="time-work">
+ <h2>Self Care</h2>
+            <span class="time">0hrs</span>
+           </div>
+            <div class="time-all">
+              <img
+              src="./images/icon-ellipsis.svg"
+              alt="icon-ellipsis"
+              class="ellipsis"
+            />
+            <p>Last Week - <span>50hrs</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Report for
-  Jeremy Robson
 
-  Daily
-  Weekly
-  Monthly
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <footer>
-    <div class="attribution">
+    <footer>
+      <div class="attribution">
         <p>
-            Coded by
-            <a
-                    href="https://github.com/Stif351/time-tracking-dashboard.git"
-                    target="_blank"
+          Coded by
+          <a
+            href="https://github.com/Stif351/time-tracking-dashboard.git"
+            target="_blank"
             >Stanislav Tsyhanok</a
-            >
+          >
         </p>
         <p>
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontendmentor</a
-            >
+          >
         </p>
-    </div>
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
