@@ -26,7 +26,7 @@ body {
   color: var(--text-footer);
   background-color: var(--neutral-navy-950);
 }
-.wrapper{
+.wrapper {
   padding: 0 10px;
 }
 .container {
@@ -44,8 +44,6 @@ body {
 .social,
 .self-care {
   height: 162px;
-  /* display: flex;
-  align-items: end; */
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -62,7 +60,7 @@ body {
   height: 204px;
   border-radius: 20px;
   background-color: var(--neutral-navy-900);
-   color: var(--neutral-navy-200);
+  color: var(--neutral-navy-200);
 }
 .avatar {
   width: 100%;
@@ -79,24 +77,21 @@ body {
   border: 2px solid var(--text-footer);
   border-radius: 50%;
 }
-.name span{
+.name span {
   display: block;
-  
 }
-.text{
-   /* color: var(--neutral-navy-200); */
+.text {
   font-size: 14px;
   margin-bottom: 5px;
 }
-.name-autor{
+.name-autor {
   font-size: 24px;
-   color: var(--text-footer);
+  color: var(--text-footer);
 }
-.period{
+.period {
   display: flex;
   justify-content: space-evenly;
-  /* color: var(--neutral-navy-200); */
- padding: 28px 0;
+  padding: 28px 0;
 }
 .work {
   background-color: var(--primary-orange);
@@ -132,20 +127,19 @@ body {
 }
 
 .time-work,
-.time-all{
+.time-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-.ellipsis{
+.ellipsis {
   width: 22px;
   height: 5px;
 }
-.time{
+.time {
   font-size: 32px;
 }
-p{
+p {
   font-size: 14px;
 }
 
@@ -173,4 +167,98 @@ footer {
   font-style: italic;
   text-decoration: none;
   color: var(--link-footer);
+}
+
+/* ================= 1024px ================   */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1113px;
+    grid-template-columns: repeat(3, 200px);
+    place-content: center;
+    margin: 10px auto;
+  }
+  .autor {
+    grid-column: 1/4;
+    height: auto;
+  }
+
+  .work,
+  .play,
+  .exercise,
+  .study,
+  .social,
+  .self-care {
+    height: 220px;
+  }
+  .icon {
+    left: 112px;
+  }
+  .dashboard {
+    height: 200px;
+    top: 45px;
+  }
+  .time-all {
+    display: block;
+  }
+  .time {
+    font-size: 40px;
+  }
+}
+
+/* ================= DESKTOP =====================  */
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1113px;
+    grid-template-columns: repeat(4, 260px);
+    place-content: center;
+    margin: 40px auto;
+  }
+  .autor {
+    grid-column: 1/1;
+    grid-row: 1 / span 2;
+    height: auto;
+  }
+  .name-autor {
+    font-size: 48px;
+  }
+  .avatar,
+  .period {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: start;
+    padding-left: 32px;
+  }
+  .avatar {
+    height: 356px;
+    gap: 48px;
+  }
+  .period {
+    gap: 16px;
+  }
+
+  .work,
+  .play,
+  .exercise,
+  .study,
+  .social,
+  .self-care {
+    width: 256px;
+    height: 244px;
+  }
+  .icon {
+    left: 155px;
+  }
+  .dashboard {
+    height: 200px;
+    top: 45px;
+  }
+  .time-all {
+    display: block;
+  }
+  .time {
+    font-size: 60px;
+  }
 }
