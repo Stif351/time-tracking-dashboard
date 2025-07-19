@@ -93,6 +93,15 @@ body {
   justify-content: space-evenly;
   padding: 28px 0;
 }
+.daily:hover,
+.weekly:hover,
+.monthly:hover {
+  cursor: pointer;
+  color: var(--text-footer);
+}
+
+/* ****************************************************************** */
+
 .work {
   background-color: var(--primary-orange);
 }
@@ -126,8 +135,8 @@ body {
   padding: 32px 24px;
 }
 
-.time-work,
-.time-all {
+.current-work,
+.current-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,10 +145,11 @@ body {
   width: 22px;
   height: 5px;
 }
-.time {
+.current,
+.current-all p {
   font-size: 32px;
 }
-p {
+p:last-child {
   font-size: 14px;
 }
 
@@ -198,10 +208,10 @@ footer {
     height: 200px;
     top: 45px;
   }
-  .time-all {
+  .current-all {
     display: block;
   }
-  .time {
+  .current {
     font-size: 40px;
   }
 }
@@ -255,10 +265,10 @@ footer {
     height: 200px;
     top: 45px;
   }
-  .time-all {
+  .current-all {
     display: block;
   }
-  .time {
+  .current {
     font-size: 60px;
   }
 }

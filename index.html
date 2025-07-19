@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <meta name="description" content="Time tracking dashboard." />
+    <meta name="description" content="current tracking dashboard." />
     <link
       rel="icon"
       type="image/png"
@@ -19,7 +19,7 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Time tracking dashboard | Frontend Mentor</title>
+    <title>current tracking dashboard | Frontend Mentor</title>
   </head>
   <body>
     <main class="wrapper">
@@ -39,15 +39,15 @@
             </div>
           </div>
           <div class="period">
-            <span> Daily</span>
-            <span>Weekly</span>
-            <span>Monthly</span>
+            <span class="daily">Daily</span>
+            <span class="weekly">Weekly</span>
+            <span class="monthly">Monthly</span>
           </div>
         </div>
         <div class="work">
           <img src="./images/icon-work.svg" alt="" class="icon" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Work</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -55,16 +55,16 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">5hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">5</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
         <div class="play">
           <img src="./images/icon-play.svg" alt="" class="icon" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Play</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -72,16 +72,16 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">1hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">1</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
         <div class="study">
           <img src="./images/icon-study.svg" alt="" class="icon" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Study</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -89,16 +89,16 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">0hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">0</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
         <div class="exercise">
           <img src="./images/icon-exercise.svg" alt="" class="icon ew" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Exercise</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -106,16 +106,16 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">1hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">1</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
         <div class="social">
           <img src="./images/icon-social.svg" alt="" class="icon" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Social</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -123,16 +123,16 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">1hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">1</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
         <div class="self-care">
           <img src="./images/icon-self-care.svg" alt="" class="icon" />
           <div class="dashboard">
-            <div class="time-work">
+            <div class="current-work">
               <span>Self Care</span>
               <img
                 src="./images/icon-ellipsis.svg"
@@ -140,9 +140,9 @@
                 class="ellipsis"
               />
             </div>
-            <div class="time-all">
-              <span class="time">0hrs</span>
-              <p>Last Week - <span>50hrs</span></p>
+            <div class="current-all">
+              <p><span class="current">0</span>hrs</p>
+              <p>Last Week - <span class="previous">50</span>hrs</p>
             </div>
           </div>
         </div>
@@ -154,7 +154,7 @@
         <p>
           Coded by
           <a
-            href="https://github.com/Stif351/time-tracking-dashboard.git"
+            href="https://github.com/Stif351/current-tracking-dashboard.git"
             target="_blank"
             >Stanislav Tsyhanok</a
           >
@@ -167,5 +167,6 @@
         </p>
       </div>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
