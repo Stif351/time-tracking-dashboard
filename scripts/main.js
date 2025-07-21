@@ -2,29 +2,68 @@
 const daily = document.querySelector('.daily')
 const weekly = document.querySelector('.weekly')
 const monthly = document.querySelector('.monthly')
-const current = document.querySelector('.current')
-const previous = document.querySelector('.previous')
+const current = document.querySelectorAll('.current')
+const previous = document.querySelectorAll('.previous')
 
 daily.addEventListener('click', dailyDisplay)
 weekly.addEventListener('click', weeklyDisplay)
 monthly.addEventListener('click', monthlyDisplay)
 
+// ****************** JSON ***********************************
+
+let q = []
+
+fetch('../data.json')
+    .then((response) => response.json())
+    .then((data) => {
+        q = data;
+    })
+
+    .catch((error) => {
+
+        console.log(error);
+    });
+
+function timeOver(a, b) {
+    current.forEach((node, index) => {
+        if (a[index] !== undefined) {
+            node.innerHTML = a[index];
+        }
+    });
+
+    previous.forEach((node, index) => {
+        if (b[index] !== undefined) {
+            node.textContent = b[index];
+        }
+    });
+}
 
 function dailyDisplay() {
-    
-    previous.innerHTML = 100
-    current.innerHTML = 10
-    // alert('HELLO>>>>')
+
+    const dailyCurrents = q.map(item => item.timeframes.daily.current);
+    const dailyPrevious = q.map(item => item.timeframes.daily.previous);
+
+    timeOver(dailyCurrents, dailyPrevious)
 }
+
 function weeklyDisplay() {
 
-    previous.innerHTML = 200
-current.innerHTML = 20
-    // alert('HELLO_11111')
+    const weeklyCurrents = q.map(item => item.timeframes.weekly.current);
+    const weeklyPrevious = q.map(item => item.timeframes.weekly.previous);
+
+    timeOver(weeklyCurrents, weeklyPrevious)
 }
+
 function monthlyDisplay() {
 
-    previous.innerHTML = 300
-current.innerHTML = 30
-    // alert('HELLO_22222')
+    const monthlyCurrents = q.map(item => item.timeframes.monthly.current);
+    const monthlyPrevious = q.map(item => item.timeframes.monthly.previous);
+
+    timeOver(monthlyCurrents, monthlyPrevious)
+
 }
+
+// *********************************** END  ****************************
+
+
+
