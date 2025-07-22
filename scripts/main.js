@@ -9,8 +9,6 @@ daily.addEventListener('click', dailyDisplay)
 weekly.addEventListener('click', weeklyDisplay)
 monthly.addEventListener('click', monthlyDisplay)
 
-// ****************** JSON ***********************************
-
 let q = []
 
 fetch('../data.json')
@@ -33,7 +31,7 @@ function timeOver(a, b) {
 
     previous.forEach((node, index) => {
         if (b[index] !== undefined) {
-            node.textContent = b[index];
+            node.innerHTML = b[index];
         }
     });
 }
@@ -62,8 +60,3 @@ function monthlyDisplay() {
     timeOver(monthlyCurrents, monthlyPrevious)
 
 }
-
-// *********************************** END  ****************************
-
-
-
