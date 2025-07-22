@@ -17,10 +17,7 @@ fetch('../data.json')
         q = data;
     })
 
-    .catch((error) => {
-
-        console.log(error);
-    });
+    .catch((error) => console.error("Error loading JSON:", error));
 
 function timeOver(a, b) {
     current.forEach((node, index) => {
